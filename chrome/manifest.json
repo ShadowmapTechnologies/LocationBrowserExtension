@@ -9,9 +9,7 @@
     "32": "icons/icon-32.png"
   },
 
-  "permissions": ["tabs", "activeTab", "webRequest", "webNavigation"],
-
-  "host_permissions": ["http://*.shadowmap.org/", "http://*.google.com/"],
+  "permissions": ["activeTab", "webRequest", "webNavigation"],
 
   "browser_action": {
     "default_icon": "icons/icon-32.png",
