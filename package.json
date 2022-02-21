@@ -1,0 +1,24 @@
+{
+  "name": "location-browser-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && node zip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadowmapTechnologies/LocationBrowserPlugin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShadowmapTechnologies/LocationBrowserPlugin/issues"
+  },
+  "homepage": "https://github.com/ShadowmapTechnologies/LocationBrowserPlugin#readme",
+  "devDependencies": {
+    "adm-zip": "^0.5.9",
+    "rimraf": "^3.0.2"
+  }
+}
