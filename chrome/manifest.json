@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Shadowmap x Google Maps",
+  "name": "Shadowmap Location Browser Extension",
   "version": "1.0",
 
   "description": "Opens the current location from Shadowmap in Google Maps and vice versa.",
