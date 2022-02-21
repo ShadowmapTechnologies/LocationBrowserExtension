@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Shadowmap Location Browser Extension",
   "version": "1.0.0",
 
@@ -11,12 +11,12 @@
 
   "permissions": ["activeTab"],
 
-  "browser_action": {
+  "action": {
     "default_icon": "icons/icon-32.png",
     "default_title": "Shadowmap"
   },
 
   "background": {
-    "scripts": ["background.js"]
+    "service_worker": "background.js"
   }
 }

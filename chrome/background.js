@@ -19,7 +19,7 @@ function generateShadowMapLink(tab) {
     return shadowMapLink
 }
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+chrome.action.onClicked.addListener(function(tab) {
 
     const tabURL = tab.url
 
