@@ -3,7 +3,7 @@
   "name": "Shadowmap Location Browser Extension",
   "version": "1.0.0",
 
-  "description": "Opens the current location from Shadowmap in Google Maps and vice versa.",
+  "description": "Open the current location from Shadowmap in Google Maps and vice versa.",
 
   "icons": {
     "32": "icons/icon-32.png"
