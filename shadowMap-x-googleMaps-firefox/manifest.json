@@ -1,0 +1,28 @@
+{
+
+    "manifest_version": 2,
+    "name": "Shadowmap x Google Maps",
+    "version": "1.0",
+
+    "description": "Opens the current location from Shadow Maps in Google Maps and vice versa.",
+
+    "icons": {
+        "32": "icons/icon-32.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "webRequest",
+        "webNavigation"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/icon-32.png",
+        "default_title": "Shadow Map"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
