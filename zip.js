@@ -1,6 +1,11 @@
-var AdmZip = require("adm-zip");
+const AdmZip = require("adm-zip");
 
-var zip = new AdmZip();
+const chromeZip = new AdmZip();
 
-zip.addLocalFolder("./chrome");
-zip.writeZip("./dist/chrome.zip");
+chromeZip.addLocalFolder("./chrome");
+chromeZip.writeZip("./dist/chrome.zip");
+
+const firefoxZip = new AdmZip();
+
+firefoxZip.addLocalFolder("./firefox");
+firefoxZip.writeZip("./dist/firefox.zip");
