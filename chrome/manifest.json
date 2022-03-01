@@ -1,16 +1,21 @@
 {
   "manifest_version": 3,
   "name": "Shadowmap Location",
-  "version": "1.1.0",
-  "description": "Open the current location from Shadowmap in Google Maps and vice versa.",
+  "version": "1.2.0",
+
+  "description": "Open the current location from Shadowmap in Google Maps/Earth and vice versa.",
+
   "icons": {
     "32": "icons/icon-32.png"
   },
+
   "permissions": ["activeTab"],
+
   "action": {
     "default_icon": "icons/icon-32.png",
     "default_title": "Shadowmap"
   },
+
   "background": {
     "run_at": "document_idle",
     "service_worker": "background.js"
