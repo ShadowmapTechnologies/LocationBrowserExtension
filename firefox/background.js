@@ -1,4 +1,5 @@
 function generateGoogleLink(tab) {
+
     const url = tab.url
     const data = url.split("?")[1].split("&")
     const lat = data[0].split("=")[1]
@@ -9,50 +10,61 @@ function generateGoogleLink(tab) {
     return googleLink
 }
 
-function generateShadowMapLink(tab, isGoogleEarth = false) {
+function generateShadowmapLinkFromGoogleMaps(tab) {
 
     const url = tab.url
-    var longlat = /\/\@(.*),(.*),/.exec(url);
+    const parameters = url.split(',')
+    const longlat = /\/\@(.*),(.*),/.exec(url);
+    const lat = longlat[1]
+    const lng = longlat[2]
 
-    var lat = longlat[1]
-    var lng = longlat[2]
     var zoomLevel = 15
 
-    if (isGoogleEarth) {
-        let extractLatLng = longlat[1].split(',')
-        lat = extractLatLng[0]
-        lng = extractLatLng[1]
-    } else {
-        var parameters = url.split(',')
-
-        for (const parameter of parameters) {
-            if (parameter.slice(-1) === 'z') {
-                zoomLevel = parameter.replace('z', '')
-                break
-            } 
-        }
+    for (const parameter of parameters) {
+        if (parameter.slice(-1) === 'z') {
+            zoomLevel = parameter.replace('z', '')
+            break
+        } 
     }
-    
+
+    return `https://app.shadowmap.org/?lat=${lat}&lng=${lng}&zoom=${zoomLevel}`
+
+}
+
+function generateShadowmapLinkFromGoogleEarth(tab) {
+
+    const url = tab.url
+    const longlat = /\/\@(.*),(.*),/.exec(url);
+    const extractLatLng = longlat[1].split(',')
+    const zoomLevel = 15
+
+    lat = extractLatLng[0]
+    lng = extractLatLng[1]
+
     return `https://app.shadowmap.org/?lat=${lat}&lng=${lng}&zoom=${zoomLevel}`
 }
+
 
 browser.browserAction.onClicked.addListener(function(tab) {
 
     const tabURL = tab.url
 
     if (tabURL.includes("app.shadowmap")) {
-        let url = generateGoogleLink(tab)
-        browser.tabs.create({ url });
-    } else if (tabURL.includes("google") && (tabURL.includes("/maps/"))) {
-        let url = generateShadowMapLink(tab);
-        if (url != undefined) {
-            browser.tabs.create({ url });
-        }
-    } else if (tabURL.includes("google") &&  tabURL.includes("earth")) {
-        let url = generateShadowMapLink(tab, true);
-        if (url != undefined) {
-            browser.tabs.create({ url });
-        }
+        const url = generateGoogleLink(tab)
+        chrome.tabs.create({ url });
+        return
+    }
+    
+    if (tabURL.includes("google") && (tabURL.includes("/maps/"))) {
+        const url = generateShadowmapLinkFromGoogleMaps(tab);
+        chrome.tabs.create({ url });
+        return
+    }
+    
+    if (tabURL.includes("google") &&  tabURL.includes("earth")) {
+        const url = generateShadowmapLinkFromGoogleEarth(tab);
+        chrome.tabs.create({ url });
+        return
     }
 
 })
