@@ -15,9 +15,9 @@ function generateShadowmapLinkFromGoogleMaps(tab) {
 
     const url = tab.url
     const parameters = url.split(',')
-    const longlat = /\/\@(.*),(.*),/.exec(url);
-    const lat = longlat[1]
-    const lng = longlat[2]
+    const lngLat = /\/\@(.*),(.*),/.exec(url);
+    const lat = lngLat[1]
+    const lng = lngLat[2]
 
     var zoomLevel = 15
 
@@ -36,8 +36,8 @@ function generateShadowmapLinkFromGoogleMaps(tab) {
 function generateShadowmapLinkFromGoogleEarth(tab) {
 
     const url = tab.url
-    const longlat = /\/\@(.*),(.*),/.exec(url);
-    const extractLatLng = longlat[1].split(',')
+    const lngLat = /\/\@(.*),(.*),/.exec(url);
+    const extractLatLng = lngLat[1].split(',')
     const zoomLevel = 15
 
     lat = extractLatLng[0]
