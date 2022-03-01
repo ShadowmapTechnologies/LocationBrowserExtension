@@ -24,7 +24,7 @@ function generateShadowmapLinkFromGoogleMaps(tab) {
     for (const parameter of parameters) {
         if (parameter.slice(-1) === 'z') {
             const zoom = parseInt(parameter.replace('z', ''))
-            zoomLevel = (3 < zoom && zoom < 19 ? zoom : zoomLevel)
+            zoomLevel = Math.min(Math.max(zoom, 3), 19)
             break
         } 
     }
