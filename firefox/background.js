@@ -4,8 +4,9 @@ function generateGoogleLink(tab) {
     const data = url.split("?")[1].split("&")
     const lat = data[0].split("=")[1]
     const lng = data[1].split("=")[1]
+    const zoom = data[2].split("=")[1]
 
-    const googleLink = `https://www.google.com/maps/@${lat},${lng},18z`
+    const googleLink = `https://www.google.com/maps/@${lat},${lng},${zoom}z`
 
     return googleLink
 }
@@ -22,7 +23,8 @@ function generateShadowmapLinkFromGoogleMaps(tab) {
 
     for (const parameter of parameters) {
         if (parameter.slice(-1) === 'z') {
-            zoomLevel = parameter.replace('z', '')
+            const zoom = parseInt(parameter.replace('z', ''))
+            zoomLevel = (3 < zoom && zoom < 19 ? zoom : zoomLevel)
             break
         } 
     }
