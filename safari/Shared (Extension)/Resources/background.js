@@ -46,9 +46,8 @@ function generateShadowmapLinkFromGoogleEarth(tab) {
     return `https://app.shadowmap.org/?lat=${lat}&lng=${lng}&zoom=${zoomLevel}`
 }
 
-
 browser.browserAction.onClicked.addListener(function(tab) {
-
+    
     const tabURL = tab.url
 
     if (tabURL.includes("app.shadowmap")) {
