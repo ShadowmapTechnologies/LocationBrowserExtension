@@ -1,10 +1,10 @@
 {
     "extension_name": {
         "message": "Shadowmap Location",
-        "description": "The display name for the extension."
+        "description": "Visualize sunlight and shadow anywhere on Earth"
     },
     "extension_description": {
-        "message": "This is Shadowmap Location. You should tell us what your extension does here.",
-        "description": "Description of what the extension does."
+        "message": "The Sun is a prerequisite for life on Earth and Shadowmap is the tool to understand it.",
+        "description": "Visualize sunlight and shadow anywhere on Earth"
     }
 }

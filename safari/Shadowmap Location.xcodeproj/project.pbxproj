@@ -17,8 +17,6 @@
 		AE0B3C2527CF6F1700110E8D /* Shadowmap Location Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE0B3C2427CF6F1700110E8D /* Shadowmap Location Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AE0B3C2B27CF6F1700110E8D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE627CF6F1500110E8D /* Main.html */; };
 		AE0B3C2C27CF6F1700110E8D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE627CF6F1500110E8D /* Main.html */; };
-		AE0B3C2D27CF6F1700110E8D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE827CF6F1500110E8D /* Icon.png */; };
-		AE0B3C2E27CF6F1700110E8D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE827CF6F1500110E8D /* Icon.png */; };
 		AE0B3C2F27CF6F1700110E8D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE927CF6F1500110E8D /* Style.css */; };
 		AE0B3C3027CF6F1700110E8D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE927CF6F1500110E8D /* Style.css */; };
 		AE0B3C3127CF6F1700110E8D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BEA27CF6F1500110E8D /* Script.js */; };
@@ -37,6 +35,10 @@
 		AE0B3C3E27CF6F1700110E8D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF227CF6F1700110E8D /* manifest.json */; };
 		AE0B3C3F27CF6F1700110E8D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF327CF6F1700110E8D /* background.js */; };
 		AE0B3C4027CF6F1700110E8D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF327CF6F1700110E8D /* background.js */; };
+		AE745FE127CF77DD007F764E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE745FE027CF77DD007F764E /* icon.png */; };
+		AE745FE227CF77DD007F764E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE745FE027CF77DD007F764E /* icon.png */; };
+		AE745FE327CF77DD007F764E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE745FE027CF77DD007F764E /* icon.png */; };
+		AE745FE427CF77DD007F764E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE745FE027CF77DD007F764E /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +85,6 @@
 
 /* Begin PBXFileReference section */
 		AE0B3BE727CF6F1500110E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
-		AE0B3BE827CF6F1500110E8D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		AE0B3BE927CF6F1500110E8D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		AE0B3BEA27CF6F1500110E8D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
 		AE0B3BEB27CF6F1500110E8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		AE0B3C2427CF6F1700110E8D /* Shadowmap Location Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shadowmap Location Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0B3C2927CF6F1700110E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE0B3C2A27CF6F1700110E8D /* Shadowmap Location.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shadowmap Location.entitlements"; sourceTree = "<group>"; };
+		AE745FE027CF77DD007F764E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,8 +170,8 @@
 		AE0B3BE527CF6F1500110E8D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE745FE027CF77DD007F764E /* icon.png */,
 				AE0B3BE627CF6F1500110E8D /* Main.html */,
-				AE0B3BE827CF6F1500110E8D /* Icon.png */,
 				AE0B3BE927CF6F1500110E8D /* Style.css */,
 				AE0B3BEA27CF6F1500110E8D /* Script.js */,
 			);
@@ -371,12 +373,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0B3C2D27CF6F1700110E8D /* Icon.png in Resources */,
 				AE0B3C0527CF6F1700110E8D /* LaunchScreen.storyboard in Resources */,
 				AE0B3C2B27CF6F1700110E8D /* Main.html in Resources */,
 				AE0B3C3127CF6F1700110E8D /* Script.js in Resources */,
 				AE0B3C3527CF6F1700110E8D /* Assets.xcassets in Resources */,
 				AE0B3C0827CF6F1700110E8D /* Main.storyboard in Resources */,
+				AE745FE127CF77DD007F764E /* icon.png in Resources */,
 				AE0B3C2F27CF6F1700110E8D /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,12 +387,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0B3C2E27CF6F1700110E8D /* Icon.png in Resources */,
 				AE0B3C3027CF6F1700110E8D /* Style.css in Resources */,
 				AE0B3C1427CF6F1700110E8D /* Main.storyboard in Resources */,
 				AE0B3C3227CF6F1700110E8D /* Script.js in Resources */,
 				AE0B3C3627CF6F1700110E8D /* Assets.xcassets in Resources */,
 				AE0B3C2C27CF6F1700110E8D /* Main.html in Resources */,
+				AE745FE227CF77DD007F764E /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +404,7 @@
 				AE0B3C3B27CF6F1700110E8D /* images in Resources */,
 				AE0B3C3D27CF6F1700110E8D /* manifest.json in Resources */,
 				AE0B3C3927CF6F1700110E8D /* _locales in Resources */,
+				AE745FE327CF77DD007F764E /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +416,7 @@
 				AE0B3C3C27CF6F1700110E8D /* images in Resources */,
 				AE0B3C3E27CF6F1700110E8D /* manifest.json in Resources */,
 				AE0B3C3A27CF6F1700110E8D /* _locales in Resources */,
+				AE745FE427CF77DD007F764E /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
