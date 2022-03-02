@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0B3C0027CF6F1700110E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3BFF27CF6F1700110E8D /* AppDelegate.swift */; };
+		AE0B3C0227CF6F1700110E8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3C0127CF6F1700110E8D /* SceneDelegate.swift */; };
+		AE0B3C0527CF6F1700110E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3C0327CF6F1700110E8D /* LaunchScreen.storyboard */; };
+		AE0B3C0827CF6F1700110E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3C0627CF6F1700110E8D /* Main.storyboard */; };
+		AE0B3C1127CF6F1700110E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3C1027CF6F1700110E8D /* AppDelegate.swift */; };
+		AE0B3C1427CF6F1700110E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3C1227CF6F1700110E8D /* Main.storyboard */; };
+		AE0B3C1B27CF6F1700110E8D /* Shadowmap Location Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE0B3C1A27CF6F1700110E8D /* Shadowmap Location Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE0B3C2527CF6F1700110E8D /* Shadowmap Location Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AE0B3C2427CF6F1700110E8D /* Shadowmap Location Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AE0B3C2B27CF6F1700110E8D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE627CF6F1500110E8D /* Main.html */; };
+		AE0B3C2C27CF6F1700110E8D /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE627CF6F1500110E8D /* Main.html */; };
+		AE0B3C2D27CF6F1700110E8D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE827CF6F1500110E8D /* Icon.png */; };
+		AE0B3C2E27CF6F1700110E8D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE827CF6F1500110E8D /* Icon.png */; };
+		AE0B3C2F27CF6F1700110E8D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE927CF6F1500110E8D /* Style.css */; };
+		AE0B3C3027CF6F1700110E8D /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BE927CF6F1500110E8D /* Style.css */; };
+		AE0B3C3127CF6F1700110E8D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BEA27CF6F1500110E8D /* Script.js */; };
+		AE0B3C3227CF6F1700110E8D /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BEA27CF6F1500110E8D /* Script.js */; };
+		AE0B3C3327CF6F1700110E8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3BEB27CF6F1500110E8D /* ViewController.swift */; };
+		AE0B3C3427CF6F1700110E8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3BEB27CF6F1500110E8D /* ViewController.swift */; };
+		AE0B3C3527CF6F1700110E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BEC27CF6F1700110E8D /* Assets.xcassets */; };
+		AE0B3C3627CF6F1700110E8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BEC27CF6F1700110E8D /* Assets.xcassets */; };
+		AE0B3C3727CF6F1700110E8D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3BEE27CF6F1700110E8D /* SafariWebExtensionHandler.swift */; };
+		AE0B3C3827CF6F1700110E8D /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0B3BEE27CF6F1700110E8D /* SafariWebExtensionHandler.swift */; };
+		AE0B3C3927CF6F1700110E8D /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF027CF6F1700110E8D /* _locales */; };
+		AE0B3C3A27CF6F1700110E8D /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF027CF6F1700110E8D /* _locales */; };
+		AE0B3C3B27CF6F1700110E8D /* images in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF127CF6F1700110E8D /* images */; };
+		AE0B3C3C27CF6F1700110E8D /* images in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF127CF6F1700110E8D /* images */; };
+		AE0B3C3D27CF6F1700110E8D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF227CF6F1700110E8D /* manifest.json */; };
+		AE0B3C3E27CF6F1700110E8D /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF227CF6F1700110E8D /* manifest.json */; };
+		AE0B3C3F27CF6F1700110E8D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF327CF6F1700110E8D /* background.js */; };
+		AE0B3C4027CF6F1700110E8D /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = AE0B3BF327CF6F1700110E8D /* background.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE0B3C1C27CF6F1700110E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0B3BE027CF6F1500110E8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0B3C1927CF6F1700110E8D;
+			remoteInfo = "Shadowmap Location Extension (iOS)";
+		};
+		AE0B3C2627CF6F1700110E8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0B3BE027CF6F1500110E8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0B3C2327CF6F1700110E8D;
+			remoteInfo = "Shadowmap Location Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE0B3C4E27CF6F1700110E8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE0B3C1B27CF6F1700110E8D /* Shadowmap Location Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C5527CF6F1700110E8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE0B3C2527CF6F1700110E8D /* Shadowmap Location Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AE0B3BE727CF6F1500110E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		AE0B3BE827CF6F1500110E8D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		AE0B3BE927CF6F1500110E8D /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		AE0B3BEA27CF6F1500110E8D /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		AE0B3BEB27CF6F1500110E8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE0B3BEC27CF6F1700110E8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0B3BEE27CF6F1700110E8D /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		AE0B3BF027CF6F1700110E8D /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		AE0B3BF127CF6F1700110E8D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		AE0B3BF227CF6F1700110E8D /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		AE0B3BF327CF6F1700110E8D /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		AE0B3BFC27CF6F1700110E8D /* Shadowmap Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shadowmap Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0B3BFF27CF6F1700110E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0B3C0127CF6F1700110E8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE0B3C0427CF6F1700110E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE0B3C0727CF6F1700110E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0B3C0927CF6F1700110E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0B3C0E27CF6F1700110E8D /* Shadowmap Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shadowmap Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0B3C1027CF6F1700110E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE0B3C1327CF6F1700110E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE0B3C1527CF6F1700110E8D /* Shadowmap Location.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shadowmap Location.entitlements"; sourceTree = "<group>"; };
+		AE0B3C1A27CF6F1700110E8D /* Shadowmap Location Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shadowmap Location Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0B3C1F27CF6F1700110E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0B3C2427CF6F1700110E8D /* Shadowmap Location Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Shadowmap Location Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0B3C2927CF6F1700110E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE0B3C2A27CF6F1700110E8D /* Shadowmap Location.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Shadowmap Location.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0B3BF927CF6F1700110E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C0B27CF6F1700110E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C1727CF6F1700110E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C2127CF6F1700110E8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0B3BDF27CF6F1500110E8D = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BE427CF6F1500110E8D /* Shared (App) */,
+				AE0B3BED27CF6F1700110E8D /* Shared (Extension) */,
+				AE0B3BFE27CF6F1700110E8D /* iOS (App) */,
+				AE0B3C0F27CF6F1700110E8D /* macOS (App) */,
+				AE0B3C1E27CF6F1700110E8D /* iOS (Extension) */,
+				AE0B3C2827CF6F1700110E8D /* macOS (Extension) */,
+				AE0B3BFD27CF6F1700110E8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0B3BE427CF6F1500110E8D /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BEB27CF6F1500110E8D /* ViewController.swift */,
+				AE0B3BEC27CF6F1700110E8D /* Assets.xcassets */,
+				AE0B3BE527CF6F1500110E8D /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		AE0B3BE527CF6F1500110E8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BE627CF6F1500110E8D /* Main.html */,
+				AE0B3BE827CF6F1500110E8D /* Icon.png */,
+				AE0B3BE927CF6F1500110E8D /* Style.css */,
+				AE0B3BEA27CF6F1500110E8D /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE0B3BED27CF6F1700110E8D /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BEE27CF6F1700110E8D /* SafariWebExtensionHandler.swift */,
+				AE0B3BEF27CF6F1700110E8D /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		AE0B3BEF27CF6F1700110E8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BF027CF6F1700110E8D /* _locales */,
+				AE0B3BF127CF6F1700110E8D /* images */,
+				AE0B3BF227CF6F1700110E8D /* manifest.json */,
+				AE0B3BF327CF6F1700110E8D /* background.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE0B3BFD27CF6F1700110E8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BFC27CF6F1700110E8D /* Shadowmap Location.app */,
+				AE0B3C0E27CF6F1700110E8D /* Shadowmap Location.app */,
+				AE0B3C1A27CF6F1700110E8D /* Shadowmap Location Extension.appex */,
+				AE0B3C2427CF6F1700110E8D /* Shadowmap Location Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0B3BFE27CF6F1700110E8D /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3BFF27CF6F1700110E8D /* AppDelegate.swift */,
+				AE0B3C0127CF6F1700110E8D /* SceneDelegate.swift */,
+				AE0B3C0327CF6F1700110E8D /* LaunchScreen.storyboard */,
+				AE0B3C0627CF6F1700110E8D /* Main.storyboard */,
+				AE0B3C0927CF6F1700110E8D /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		AE0B3C0F27CF6F1700110E8D /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3C1027CF6F1700110E8D /* AppDelegate.swift */,
+				AE0B3C1227CF6F1700110E8D /* Main.storyboard */,
+				AE0B3C1527CF6F1700110E8D /* Shadowmap Location.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		AE0B3C1E27CF6F1700110E8D /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3C1F27CF6F1700110E8D /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		AE0B3C2827CF6F1700110E8D /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				AE0B3C2927CF6F1700110E8D /* Info.plist */,
+				AE0B3C2A27CF6F1700110E8D /* Shadowmap Location.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0B3BFB27CF6F1700110E8D /* Shadowmap Location (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0B3C4F27CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location (iOS)" */;
+			buildPhases = (
+				AE0B3BF827CF6F1700110E8D /* Sources */,
+				AE0B3BF927CF6F1700110E8D /* Frameworks */,
+				AE0B3BFA27CF6F1700110E8D /* Resources */,
+				AE0B3C4E27CF6F1700110E8D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0B3C1D27CF6F1700110E8D /* PBXTargetDependency */,
+			);
+			name = "Shadowmap Location (iOS)";
+			productName = "Shadowmap Location (iOS)";
+			productReference = AE0B3BFC27CF6F1700110E8D /* Shadowmap Location.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0B3C0D27CF6F1700110E8D /* Shadowmap Location (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0B3C5627CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location (macOS)" */;
+			buildPhases = (
+				AE0B3C0A27CF6F1700110E8D /* Sources */,
+				AE0B3C0B27CF6F1700110E8D /* Frameworks */,
+				AE0B3C0C27CF6F1700110E8D /* Resources */,
+				AE0B3C5527CF6F1700110E8D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0B3C2727CF6F1700110E8D /* PBXTargetDependency */,
+			);
+			name = "Shadowmap Location (macOS)";
+			productName = "Shadowmap Location (macOS)";
+			productReference = AE0B3C0E27CF6F1700110E8D /* Shadowmap Location.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0B3C1927CF6F1700110E8D /* Shadowmap Location Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0B3C4B27CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location Extension (iOS)" */;
+			buildPhases = (
+				AE0B3C1627CF6F1700110E8D /* Sources */,
+				AE0B3C1727CF6F1700110E8D /* Frameworks */,
+				AE0B3C1827CF6F1700110E8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shadowmap Location Extension (iOS)";
+			productName = "Shadowmap Location Extension (iOS)";
+			productReference = AE0B3C1A27CF6F1700110E8D /* Shadowmap Location Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AE0B3C2327CF6F1700110E8D /* Shadowmap Location Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0B3C5227CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location Extension (macOS)" */;
+			buildPhases = (
+				AE0B3C2027CF6F1700110E8D /* Sources */,
+				AE0B3C2127CF6F1700110E8D /* Frameworks */,
+				AE0B3C2227CF6F1700110E8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shadowmap Location Extension (macOS)";
+			productName = "Shadowmap Location Extension (macOS)";
+			productReference = AE0B3C2427CF6F1700110E8D /* Shadowmap Location Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0B3BE027CF6F1500110E8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					AE0B3BFB27CF6F1700110E8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AE0B3C0D27CF6F1700110E8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AE0B3C1927CF6F1700110E8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					AE0B3C2327CF6F1700110E8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = AE0B3BE327CF6F1500110E8D /* Build configuration list for PBXProject "Shadowmap Location" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0B3BDF27CF6F1500110E8D;
+			productRefGroup = AE0B3BFD27CF6F1700110E8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0B3BFB27CF6F1700110E8D /* Shadowmap Location (iOS) */,
+				AE0B3C0D27CF6F1700110E8D /* Shadowmap Location (macOS) */,
+				AE0B3C1927CF6F1700110E8D /* Shadowmap Location Extension (iOS) */,
+				AE0B3C2327CF6F1700110E8D /* Shadowmap Location Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0B3BFA27CF6F1700110E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C2D27CF6F1700110E8D /* Icon.png in Resources */,
+				AE0B3C0527CF6F1700110E8D /* LaunchScreen.storyboard in Resources */,
+				AE0B3C2B27CF6F1700110E8D /* Main.html in Resources */,
+				AE0B3C3127CF6F1700110E8D /* Script.js in Resources */,
+				AE0B3C3527CF6F1700110E8D /* Assets.xcassets in Resources */,
+				AE0B3C0827CF6F1700110E8D /* Main.storyboard in Resources */,
+				AE0B3C2F27CF6F1700110E8D /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C0C27CF6F1700110E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C2E27CF6F1700110E8D /* Icon.png in Resources */,
+				AE0B3C3027CF6F1700110E8D /* Style.css in Resources */,
+				AE0B3C1427CF6F1700110E8D /* Main.storyboard in Resources */,
+				AE0B3C3227CF6F1700110E8D /* Script.js in Resources */,
+				AE0B3C3627CF6F1700110E8D /* Assets.xcassets in Resources */,
+				AE0B3C2C27CF6F1700110E8D /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C1827CF6F1700110E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C3F27CF6F1700110E8D /* background.js in Resources */,
+				AE0B3C3B27CF6F1700110E8D /* images in Resources */,
+				AE0B3C3D27CF6F1700110E8D /* manifest.json in Resources */,
+				AE0B3C3927CF6F1700110E8D /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C2227CF6F1700110E8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C4027CF6F1700110E8D /* background.js in Resources */,
+				AE0B3C3C27CF6F1700110E8D /* images in Resources */,
+				AE0B3C3E27CF6F1700110E8D /* manifest.json in Resources */,
+				AE0B3C3A27CF6F1700110E8D /* _locales in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0B3BF827CF6F1700110E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C3327CF6F1700110E8D /* ViewController.swift in Sources */,
+				AE0B3C0027CF6F1700110E8D /* AppDelegate.swift in Sources */,
+				AE0B3C0227CF6F1700110E8D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C0A27CF6F1700110E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C3427CF6F1700110E8D /* ViewController.swift in Sources */,
+				AE0B3C1127CF6F1700110E8D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C1627CF6F1700110E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C3727CF6F1700110E8D /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0B3C2027CF6F1700110E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0B3C3827CF6F1700110E8D /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE0B3C1D27CF6F1700110E8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0B3C1927CF6F1700110E8D /* Shadowmap Location Extension (iOS) */;
+			targetProxy = AE0B3C1C27CF6F1700110E8D /* PBXContainerItemProxy */;
+		};
+		AE0B3C2727CF6F1700110E8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0B3C2327CF6F1700110E8D /* Shadowmap Location Extension (macOS) */;
+			targetProxy = AE0B3C2627CF6F1700110E8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE0B3BE627CF6F1500110E8D /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0B3BE727CF6F1500110E8D /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		AE0B3C0327CF6F1700110E8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0B3C0427CF6F1700110E8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0B3C0627CF6F1700110E8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0B3C0727CF6F1700110E8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE0B3C1227CF6F1700110E8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE0B3C1327CF6F1700110E8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE0B3C4927CF6F1700110E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE0B3C4A27CF6F1700110E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		AE0B3C4C27CF6F1700110E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE0B3C4D27CF6F1700110E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0B3C5027CF6F1700110E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE0B3C5127CF6F1700110E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0B3C5327CF6F1700110E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Shadowmap Location.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE0B3C5427CF6F1700110E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Shadowmap Location.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE0B3C5727CF6F1700110E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Shadowmap Location.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE0B3C5827CF6F1700110E8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Shadowmap Location.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H26552SB8H;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Shadowmap Location";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.shadowmap.ShadowmapLocationBrowserExtension;
+				PRODUCT_NAME = "Shadowmap Location";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0B3BE327CF6F1500110E8D /* Build configuration list for PBXProject "Shadowmap Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0B3C4927CF6F1700110E8D /* Debug */,
+				AE0B3C4A27CF6F1700110E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0B3C4B27CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0B3C4C27CF6F1700110E8D /* Debug */,
+				AE0B3C4D27CF6F1700110E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0B3C4F27CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0B3C5027CF6F1700110E8D /* Debug */,
+				AE0B3C5127CF6F1700110E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0B3C5227CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0B3C5327CF6F1700110E8D /* Debug */,
+				AE0B3C5427CF6F1700110E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0B3C5627CF6F1700110E8D /* Build configuration list for PBXNativeTarget "Shadowmap Location (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0B3C5727CF6F1700110E8D /* Debug */,
+				AE0B3C5827CF6F1700110E8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE0B3BE027CF6F1500110E8D /* Project object */;
+}
