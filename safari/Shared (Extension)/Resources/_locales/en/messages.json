@@ -1,10 +1,10 @@
 {
     "extension_name": {
         "message": "Shadowmap Location",
-        "description": "Visualize sunlight and shadow anywhere on Earth"
+        "description": "Shadowmap Location allows you to open the current location from Google Maps/Earth in Shadowmap and vice versa."
     },
     "extension_description": {
-        "message": "The Sun is a prerequisite for life on Earth and Shadowmap is the tool to understand it.",
-        "description": "Visualize sunlight and shadow anywhere on Earth"
+        "message": "Open the current location from Google Maps/Earth in Shadowmap and vice versa.",
+        "description": "Shadowmap Location is an extension that allows you to open the current location in Shadowmap with one click in Google Maps. The whole thing also works in the other direction. With a click on the extension icon you can display the current location opened in Google Maps/Earth in Shadowmap."
     }
 }
