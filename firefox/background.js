@@ -50,10 +50,15 @@ function generateShadowmapLinkFromGoogleEarth(tab) {
 browser.browserAction.onClicked.addListener(function(tab) {
 
     const tabURL = tab.url
+    
+    if(!tabURL.includes("app.shadowmap") && !tabURL.includes("google")) {
+        chrome.tabs.create("https://app.shadowmap.org/");
+        return
+    }
 
     if (tabURL.includes("app.shadowmap")) {
         const url = generateGoogleLink(tab)
-        chrome.tabs.create({ url });
+        browser.tabs.create({ url });
         return
     }
     
