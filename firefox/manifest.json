@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Shadowmap Location",
-  "version": "1.3.0",
+  "version": "1.4.0",
 
   "description": "Open the current location from Google Maps/Earth in Shadowmap and vice versa.",
 
